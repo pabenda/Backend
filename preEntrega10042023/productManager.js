@@ -51,7 +51,7 @@ class ProductManager {
   
     updatePriceEarning(newPrice) {
       this._priceEarning = newPrice;
-      console.log("El precio base de ganancia se ha actualizado");
+      console.log("El precio se ha actualizado");
     }
   
     updateStock(code, newStock) {
@@ -85,8 +85,8 @@ class ProductManager {
   }
   
   const productManager = new ProductManager();
-  productManager.addProduct("Camisa", "Camisa de algodón", 50, "ruta/de/imagen", "CAM001", 100);
-  productManager.addProduct("Pantalón", "Pantalón de mezclilla", 80, "ruta/de/imagen", "PAN001", 50);
+  productManager.addProduct("Camisa", "Camisa de vestir", 50, "ruta/de/imagen", "CAM001", 100);
+  productManager.addProduct("Pantalón", "Jean", 80, "ruta/de/imagen", "PAN001", 50);
   productManager.updateStock("CAM001", 80);
   productManager.updateStock("PAN001", 50);
   productManager.deleteProduct("CAM001");
